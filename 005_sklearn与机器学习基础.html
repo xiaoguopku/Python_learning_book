@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>集成学习综述</title>
+    
+  <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.bfb7730f9caf2ec0b46a44615585038c.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.30270b6e4c972e43c488.js">
+
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/togglebutton.js"></script>
+    <script type="text/javascript" src="_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Python 数据分析指南与速查手册
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Jupyter notebook 使用指南
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_Jupyter notebook 使用指南.html">
+   Jupyter notebook 快捷键
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_Jupyter notebook 使用指南.html#id4">
+   Jupyter notebook 拓展
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_Jupyter notebook 使用指南.html#id5">
+   结果输出
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Python 语法基础
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html">
+   注释
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#python">
+   Python 数据类型
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id18">
+   标识符命名
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id19">
+   运算符
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id22">
+   换行
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id26">
+   代码块与缩进
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id27">
+   控制流
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id32">
+   函数
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#modules">
+   模块（ Modules）
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#packages">
+   包（Packages）
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id39">
+   常用函数
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id40">
+   管理工作空间
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id41">
+   获取帮助
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id42">
+   调试
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id43">
+   异常处理
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id44">
+   输入与输出
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_Python语法基础.html#id47">
+   编码
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Python, Numpy, Pandas 数据结构
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_Python_Numpy_Pandas_数据结构.html">
+   Python内置数据结构
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_Python_Numpy_Pandas_数据结构.html#id22">
+   序列的其他特性
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_Python_Numpy_Pandas_数据结构.html#numpy">
+   NumPy 基本数据结构
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_Python_Numpy_Pandas_数据结构.html#pandas">
+   pandas基本数据结构
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pandas 数据规整
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_Pandas_数据规整.html">
+   数据导入与导出
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_Pandas_数据规整.html#id2">
+   数据规整
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/005_sklearn与机器学习基础.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/005_sklearn与机器学习基础.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/005_sklearn与机器学习基础.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   集成学习综述
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   决策树
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     总体思想
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       特征选择
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       树生成
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       剪枝
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       缺失值问题
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   随机森林
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adaboost">
+   AdaBoost
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     要素
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gbdt-gradient-boosting-decision-tree">
+   GBDT（Gradient Boosting Decision Tree，梯度提升树）
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     要素
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#xgboost">
+   XGBoost
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     特征重要度
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>集成学习综述<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>参考了 https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&amp;mid=2247487678&amp;idx=1&amp;sn=3645f3976aac5ca1bad1bc5b759b9dbe&amp;chksm=fdb68d29cac1043f5084379ae76f34be2d2904da91344da24e0036f4396c9f64862407064907&amp;mpshare=1&amp;scene=1&amp;srcid=0429sSKWFSfQmu1SGlVFdHnV&amp;key=904260214fdf0829f5622800d9fdec635b0c82e922e4c560881c964f34f81cb6e995a61f23764e79f4fd15e41064f3450d77673214b4510bb6d7eada94ef8af93a1d8fd66e0a408bea05406bae390082&amp;ascene=1&amp;uin=MTIyNzMwNjMwMg%3D%3D&amp;devicetype=Windows+10&amp;version=62060739&amp;lang=zh_CN&amp;pass_ticket=WbJ%2Fl0UlM1RoyxCN9U4yMm4cKIWCROiiZksru8UI90Ez4j%2FZV4wjCIlfe%2Bk7MqZk</p>
+<p>基础：决策树</p>
+<ul class="simple">
+<li><p>Bagging</p>
+<ul>
+<li><p>随机森林</p></li>
+</ul>
+</li>
+<li><p>Boosting</p>
+<ul>
+<li><p>AdaBoost</p></li>
+<li><p>GBDT</p></li>
+<li><p>XGBoost</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h1>决策树<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id3">
+<h2>总体思想<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>依次选择单个特征（可以是连续，也可以是离散）对数据进行划分，将整个被划分的特征空间（决定性地或以一定概率）映射到目标变量（可以是连续，也可以是离散）空间中。</p>
+<p>当以依概率映射来理解时，决策树实质上是一个条件概率分布。理论上，通过极大似然可以找到最优的特征空间的划分，由于最优决策树是NP完全问题，通常采用启发式方法找到相对较好的特征划分方法。</p>
+<p>决策树与其他监督学习方法的区别在于，其特征划分的边界都是与坐标轴平行的线段（线段组合起来也可以足够复杂）。</p>
+<p>决策树3步骤：特征选择、树生成、剪枝。</p>
+<div class="section" id="id4">
+<h3>特征选择<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>ID3：特征选择用信息增益（最大），要求特征是离散的（如果不是离散，则对其进行划分，原始论文中只考虑了离散）。目标变量只能是离散的。</p></li>
+<li><p>C4.5：特征选择用信息增益比（最大），也要求特征是离散的（如果不是离散，则对其进行划分，原始论文中考虑了两种，也可以是混合）。目标变量只能是离散的。</p></li>
+<li><p>CART：</p>
+<ul>
+<li><p>回归：平方误差最小。</p></li>
+<li><p>分类：特征选择用基尼指数（最小）。</p></li>
+<li><p>无论特征是连续还是离散，都需要将样本分为2类，继续计算平方误差或基尼指数，因而对CART来说，不区分特征是否是离散的，只区分目标变量是连续还是离散的，即只区分分类还是回归。特征可以是连续也可以是离散，目标变量同样既可以连续也可以离散。</p></li>
+</ul>
+</li>
+</ul>
+<p>CART算法不同之处在于，每次只分为2叉树：</p>
+<ul class="simple">
+<li><p>对于回归，它除了确定特征，还要确定特征的划分点（暴力搜索）</p></li>
+<li><p>对于分类，除了确定特征，还确定特征的取值（作为划分点）</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>树生成<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>用选择的特征将样本分为多个类，迭代进行，直到</p>
+<ul class="simple">
+<li><p>叶节点中类别全部相同</p></li>
+<li><p>叶节点中样本个数达到阈值</p></li>
+<li><p>继续划分的信息增益（增益比）小于阈值</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>剪枝<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>简单剪枝：以整棵树的经验熵作为训练误差，树的叶节点个数作为正则项，整体作为损失函数，参数alpha为正则项系数。对树从叶节点开始剪枝，如果剪枝后损失函数确实可以下降，则实施剪枝。</p></li>
+<li><p>CART中的剪枝：整棵树的基尼指数作为训练误差，树的叶节点个数作为正则项，整体为损失函数。实施所有剪枝，形成一系列的树，通过交叉验证选择最优的树。</p></li>
+<li><p>alpha越大，越倾向于简单的树，alpha无穷大时，根节点最优。alpha越小，越倾向于复杂的树，alpha为0时，不剪枝最优。</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>缺失值问题<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>某些情况下样本特征向量中一些分量没有值，这称为属性缺失。例如晚上我们无法观察到物体的颜色值，颜色属性就缺失了。在决策树的训练过程中，寻找最佳分裂时如果某一个属性上有些样本有属性缺失，可以把这些缺失该属性的样本剔除掉，然后照常训练，这是最简单的做法。</p>
+<p>除此之外还可以使用替代分裂规则。对于每个决策树节点除了计算出一个最佳分裂规则作为主分裂规则，还会生成一个或者多个替代分裂规则作为备选。在预测时如果主分裂规则对应的特征出现缺失，则使用替代分裂规则进行判定。需要注意的是，替代分裂对于分类问题和回归问题是做相同的处理。</p>
+<p>现在的关键问题是怎样生成替代分裂规则。主分裂和替代分裂对所有样本的分裂结果有4种情况，分别是：</p>
+<p>LL, LR, RL, RR</p>
+<p>LL表示被主分裂、替代分裂都分到了左子树的样本数。LR表示被主分裂分到了左子树，被替代分裂分到了右子树的样本数。RL表示被主分裂分到了右子树，被替代分裂分到了左子树的样本数。RR表示被主分裂和替代分裂都分到了右子树的样本数。</p>
+<p>因此LL+RR是被替代分裂正确分类的样本数，LR+RL是被替代分裂错分的样本数。由于可以将左右子树反过来，因此给定一个特征分量，在寻找替代分裂的分裂阈值时要让LL+RR或者LR+RL最大化，最后取它们的最大值：</p>
+<p>max(LL + RR, LR + RL)</p>
+<p>该值对应的分裂阈值为替代分裂的分裂阈值。对于除最佳分裂所用特征之外的其他所有特征，都找出该特征的最佳分裂和上面的值。最后取该值最大的那个特征和分裂阈值作为替代分裂规则。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h1>随机森林<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h1>
+<p>Bootstrap抽样的做法是在n个样本的集合中有放回的抽取n个样本形成一个数据集。如果样本量很大，在整个抽样过程中每个样本有0.368的概率不被抽中。这部分样本称为包外（Out Of Bag，简称OOB）数据。</p>
+<p>Bagging（Bootstrap Aggregating）算法：这种方法对训练样本集进行多次Bootstrap抽样，用每次抽样形成的数据集训练一个弱学习器模型，得到多个独立的弱学习器（对于分类问题，称为弱分类器），最后用它们的组合进行预测。</p>
+<p>Bagging算法是一个抽象的框架，并没有指明每个弱学习器是什么类型的。如果弱学习器是决策树，这种方法就是随机森林。在训练决策树的每个节点时所用的特征也是随机抽样得到的，即从特征向量中随机抽出部分特征参与训练。</p>
+<p>使用多棵决策树联合进行预测可以有效降低模型的方差。树的数目选择：上百到上万。(sklearn默认为100)</p>
+<p><img alt="树的数目选择" src="_images/ntrees.png" /></p>
+<p>变量重要度：使用袋外数据计算第<span class="math notranslate nohighlight">\(j\)</span>棵决策树的校验误差 <span class="math notranslate nohighlight">\(E_j\)</span>，随机打乱袋外数据的第<span class="math notranslate nohighlight">\(i\)</span>个待评估特征并再次计算第j棵决策树的校验误差 <span class="math notranslate nohighlight">\(E_{ij}'\)</span>，两者相减求平方和得 <span class="math notranslate nohighlight">\(f_i=\Sigma_j^n (E_{ij}'-E_j )^2\)</span>，n为决策树个数， <span class="math notranslate nohighlight">\(f_i\)</span>可以作为单个特征重要性参考值，即值越大打乱特征的影响越大，该特征越重要。而该方法中涉及到的对数据进行打乱的方法通常有两种：
+1）是使用uniform或者gaussian抽取随机值替换原特征；
+2）是通过permutation的方式将原来的所有N个样本的第 i 个特征值重新打乱分布（相当于重新洗牌）。</p>
+<p>sklearn中的特征数设定：</p>
+<p>max_features : int, float, string or None, optional (default=”auto”)
+The number of features to consider when looking for the best split:</p>
+<p>If int, then consider max_features features at each split.
+If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
+If “auto”, then max_features=sqrt(n_features).
+If “sqrt”, then max_features=sqrt(n_features) (same as “auto”).
+If “log2”, then max_features=log2(n_features).
+If None, then max_features=n_features.</p>
+<p>通常特征数寻优的设定：</p>
+<p>A common suggestion is to start with 5 values evenly spaced across the range from 2 to p（从2到所有特征数之间找5个点）</p>
+</div>
+<div class="section" id="adaboost">
+<h1>AdaBoost<a class="headerlink" href="#adaboost" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id9">
+<h2>要素<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>对训练样本赋予权值，被正确分类的样本权值低，被错误分类的样本权值高；</p></li>
+<li><p>对训练模型赋予权值，正确率高的模型权值高；</p></li>
+<li><p>顺序迭代，生成M个分类器（模型权值在迭代过程中不起决定性作用）</p></li>
+<li><p>最终分类器由各分类器加权获得（投票）</p></li>
+</ol>
+<p>主要是为了降低偏差。（可能增加方差而过拟合）</p>
+<p>标准的AdaBoost算法只能用于二分类问题，它的改进型可以用于多类分类问题</p>
+<p>Boosting作为一种抽象框架很早就被提出，但一直没有很好的具体实现。AdaBoost算法（Adaptive Boosting，自适应Boosting）是Boosting算法的一种实现版本。</p>
+</div>
+</div>
+<div class="section" id="gbdt-gradient-boosting-decision-tree">
+<h1>GBDT（Gradient Boosting Decision Tree，梯度提升树）<a class="headerlink" href="#gbdt-gradient-boosting-decision-tree" title="Permalink to this headline">¶</a></h1>
+<p>和AdaBoost算法类似，GBDT（Gradient Boosting Decision Tree，梯度提升树）[15]也是提升算法的一种实现，将决策树用于梯度提升框架，依次训练每一棵决策树。</p>
+<div class="section" id="id10">
+<h2>要素<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>顺次训练多棵树</p></li>
+<li><p>用损失函数对模型的负梯度来近似表达模型的残差，下一棵树对残差进行拟合</p></li>
+<li><p>最终模型为所有模型之和</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="xgboost">
+<h1>XGBoost<a class="headerlink" href="#xgboost" title="Permalink to this headline">¶</a></h1>
+<p>XGBoost是对梯度提升算法的改进。XGBoost对损失函数进行了改进，由两部分构成，第一部分为梯度提升算法的损失函数，第二部分为正则化项。</p>
+<div class="math notranslate nohighlight">
+\[
+L_{t}=\sum_{i=1}^{n} l\left(y_{i}, y_{i}^{t-1}+f_{t}\left(\mathrm{x}_{i}\right)\right)+\Omega\left(f_{t}\right)
+\]</div>
+<p>正则化项由两部分构成</p>
+<div class="math notranslate nohighlight">
+\[
+\Omega(f)=\gamma T+\frac{1}{2} \lambda\|\mathrm{w}\|^{2}
+\]</div>
+<p>其中T是决策树的叶子节点数，代表了树的规模；W是决策树所有叶子节点的预测值构成的向量。</p>
+<p>求解目标函数极小值时，对目标函数做二阶泰勒展开，得到</p>
+<div class="math notranslate nohighlight">
+\[
+L_{t} \approx \sum_{i=1}^{n}\left(l\left(y_{i}, y_{i}^{t-1}\right)+g_{i} f_{t}\left(\mathrm{x}_{i}\right)+\frac{1}{2} h_{i} f_{t}^{2}\left(\mathrm{x}_{i}\right)\right)+\Omega\left(f_{t}\right)
+\]</div>
+<p>其中，gi是损失函数对yit −1的一阶导数值，hi为损失函数对yit −1的二阶导数值。</p>
+<p>然后用类似牛顿法的方式进行迭代。在训练决策树时，还采用了类似于随机森林的策略，对特征向量的分量进行抽样。</p>
+<div class="section" id="id11">
+<h2>特征重要度<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>https://cloud.tencent.com/developer/article/1081625</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 郭晓<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.30270b6e4c972e43c488.js"></script>
+
+
+    
+  </body>
+</html>
