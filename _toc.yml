@@ -1,0 +1,14 @@
+- file: intro
+
+- part: Jupyter notebook 使用指南
+  chapters:
+  - file: 001_Jupyter notebook 使用指南
+- part: Python 语法基础
+  chapters:
+  - file: 002_Python语法基础
+- part: Python, Numpy, Pandas 数据结构
+  chapters:
+  - file: 003_Python_Numpy_Pandas_数据结构
+- part: Pandas 数据规整
+  chapters:
+  - file: 004_Pandas_数据规整
